@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: hsl(25, 97%, 53%);
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-200: hsl(217, 12%, 63%);
+  --neutral-300: hsl(213, 19%, 18%);
+  --neutral-400: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--neutral-400);
+  color: var(--neutral-100);
+}
+
+.m-1 {
+  margin-bottom: 1.8rem;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+p {
+  color: var(--neutral-200);
+  line-height: 1.5rem;
+  font-size: 15px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-component {
+  background-color: hsl(215, 24%, 14%);
+  padding: 1.5em;
+  border-radius: 1.5rem;
+  width: 25rem;
+  /* min-height: 25rem; */
+}
+
+.rate-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.circle {
+  background-color: hsl(211, 24%, 19%);
+  padding: 1rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+input[type='radio'] {
+  appearance: none;
+}
+
+.rating {
+  cursor: pointer;
+  text-align: center;
+}
+
+.rating:hover {
+  background-color: var(--primary);
+}
+
+.rating-selected {
+  background-color: hsl(214, 12%, 54%);
+}
+
+.rating-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1em;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--neutral-100);
+  border: none;
+
+  border-radius: 2em;
+}
+
+.submit-button:hover {
+  background-color: var(--neutral-100);
+  color: var(--primary);
+}
+
+.thankyou {
+  /* height: 24rem; */
+  text-align: center;
+  padding: 0.5em;
+}
+
+.thankyou > * {
+  margin-bottom: 10px;
+}
+
+.final-rating {
+  width: fit-content;
+  background-color: hsl(210, 19%, 18%);
+  color: hsl(26, 67%, 45%);
+  font-weight: 300;
+  padding: 8px 20px;
+  border-radius: 2em;
+
+  align-self: center;
+  margin-bottom: 2em;
+}
+
+.svg {
+  height: 6em;
+  margin-bottom: 1em;
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  color: teal;
+}
